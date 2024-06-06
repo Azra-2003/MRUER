@@ -1,0 +1,278 @@
+ /* Reset Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fffdfd;
+    color: #050505;
+}
+
+.header {
+    background: #fcfbfb;
+    color: #050505;
+    padding: 1rem 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+}
+
+.logo img {
+    max-width: 100px; 
+    height: auto;
+    margin-top: -15px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+  .header nav ul li {
+    margin-left: 5rem;
+  }
+  
+  .header nav ul li a {
+    color: #050505;
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Logo Styles */
+  .logo {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    z-index: 1001;
+  }
+  
+  /* Basic styles for the navigation */
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav ul li {
+    margin-right: 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* Change color of menu items on hover */
+.header nav ul li a:hover {
+    color: #333;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+  
+  
+  
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav ul.show {
+    display: flex;
+  }
+
+}
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav ul.show {
+      display: flex;
+    }
+  
+  }
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav ul {
+      display: none; 
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav.active ul {
+      display: flex; 
+    }
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('close-up-person-working-call-center.jpg');
+    background-size: cover;
+    background-position: center top 100%;
+    background-repeat: no-repeat;
+    color: #050505;
+    text-align: center;
+    padding: 210px 0;
+    height: 95vh;
+    position: relative;
+  }
+
+  /* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .hero {
+      background-size: contain; 
+      background-position: center; 
+    }
+   }
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Contact Info Section Styles */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 18px;
+}
+
+/* Contact Actions Section Styles */
+.contact-actions {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact-actions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-actions p {
+    font-size: 18px;
+}
+
+.contact-actions .contact-links {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 20px; /* Adjust spacing */
+}
+
+.contact-actions .contact-links a {
+    display: inline-block; 
+    margin: 0 10px; 
+}
+
+.contact-actions .contact-links img {
+    width: 50px; 
+    height: auto; 
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer ul li:last-child {
+    margin-right: 0;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #474646;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .about,
+    .services,
+    .contact {
+        padding: 50px 0; 
+    }
+
+    .about h2,
+    .services h2,
+    .contact h2 {
+        font-size: 24px; 
+    }
+
+    .about p,
+    .services p,
+    .contact p {
+        font-size: 16px; 
+    }
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px; 
+    }
+}
