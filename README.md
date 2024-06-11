@@ -1,4 +1,4 @@
-# Check out the live version of this project on Github Pages : Check out the live version of this project hosted on Github Pages:https://azra-2003.github.io/MRUER/services.html
+# Check out the live version of this project on Github Pages : Check out the live version of this project hosted on Github Pages:https://azra-2003.github.io/MRUER/
 **MRUER Security Company Website**
 
 
